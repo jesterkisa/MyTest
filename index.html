@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code Test App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Claude Code Test App</h1>
+            <p>Testing Cursor + Claude Code integration</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2>Interactive Counter</h2>
+                <div class="counter-display">
+                    <span id="count">0</span>
+                </div>
+                <div class="buttons">
+                    <button id="decrement">-</button>
+                    <button id="increment">+</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Color Generator</h2>
+                <div class="color-display" id="colorDisplay"></div>
+                <button id="generateColor">Generate Random Color</button>
+                <p id="colorValue">Click the button to generate a color!</p>
+            </div>
+            
+            <div class="card">
+                <h2>Todo List</h2>
+                <div class="todo-input">
+                    <input type="text" id="todoInput" placeholder="Add a new todo...">
+                    <button id="addTodo">Add</button>
+                </div>
+                <ul id="todoList"></ul>
+            </div>
+        </main>
+        
+        <footer>
+            <p>✅ If you can see this and interact with the elements above, everything is working!</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
