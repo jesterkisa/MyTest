@@ -7,7 +7,7 @@ const resetBtn = document.getElementById('reset');
 
 function updateCount() {
     countDisplay.textContent = count;
-    countDisplay.style.color = count > 0 ? '#48bb78' : count < 0 ? '#e53e3e' : '#667eea';
+    countDisplay.style.color = count > 0 ? '#718096' : count < 0 ? '#a0aec0' : '#4a5568';
 }
 
 incrementBtn.addEventListener('click', () => {
@@ -32,9 +32,9 @@ const colorValue = document.getElementById('colorValue');
 
 function generateRandomColor() {
     const colors = [
-        '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7',
-        '#DDA0DD', '#98D8C8', '#F7DC6F', '#BB8FCE', '#85C1E9',
-        '#F8C471', '#82E0AA', '#F1948A', '#85C1E9', '#D7BDE2'
+        '#4a5568', '#718096', '#a0aec0', '#cbd5e0', '#e2e8f0',
+        '#2d3748', '#1a202c', '#4299e1', '#63b3ed', '#90cdf4',
+        '#bee3f8', '#5a67d8', '#667eea', '#7c3aed', '#9f7aea'
     ];
     
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -141,18 +141,16 @@ const quoteAuthor = document.getElementById('quoteAuthor');
 const generateQuoteBtn = document.getElementById('generateQuote');
 
 const quotes = [
-    { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
-    { text: "Innovation distinguishes between a leader and a follower.", author: "Steve Jobs" },
-    { text: "Life is what happens to you while you're busy making other plans.", author: "John Lennon" },
-    { text: "The future belongs to those who believe in the beauty of their dreams.", author: "Eleanor Roosevelt" },
-    { text: "It is during our darkest moments that we must focus to see the light.", author: "Aristotle" },
-    { text: "The way to get started is to quit talking and begin doing.", author: "Walt Disney" },
-    { text: "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.", author: "Roy T. Bennett" },
-    { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" },
-    { text: "The only impossible journey is the one you never begin.", author: "Tony Robbins" },
-    { text: "In the middle of difficulty lies opportunity.", author: "Albert Einstein" },
-    { text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" },
-    { text: "The future depends on what you do today.", author: "Mahatma Gandhi" }
+    { text: "In every walk with nature, one receives far more than he seeks.", author: "John Muir" },
+    { text: "The mountains are calling and I must go.", author: "John Muir" },
+    { text: "Between every two pines is a doorway to a new world.", author: "John Muir" },
+    { text: "Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean.", author: "John Muir" },
+    { text: "The clearest way into the Universe is through a forest wilderness.", author: "John Muir" },
+    { text: "Of all the paths you take in life, make sure a few of them are dirt.", author: "John Muir" },
+    { text: "Take time to make your soul happy.", author: "John Muir" },
+    { text: "Going to the mountains is going home.", author: "John Muir" },
+    { text: "Nature's peace will flow into you as sunshine flows into trees.", author: "John Muir" },
+    { text: "I never saw a discontented tree. They grip the ground as though they liked it, and though fast rooted they travel about as far as we do.", author: "John Muir" }
 ];
 
 function generateQuote() {
